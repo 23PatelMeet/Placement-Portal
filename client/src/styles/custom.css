@@ -1,0 +1,78 @@
+:root {
+  --brand-primary: #4f46e5;
+  --brand-accent: #22c55e;
+}
+
+.navbar-brand {
+  color: var(--brand-primary) !important;
+}
+
+.btn-brand {
+  background-color: var(--brand-primary);
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: #3b37ad;
+  color: #fff;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.job-card {
+  border-radius: 14px;
+}
+
+.job-title {
+  font-size: 1.25rem;
+}
+
+.job-actions.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Fix text display issues */
+* {
+  word-wrap: normal !important;
+  white-space: normal !important;
+  writing-mode: horizontal-tb !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+label,
+button,
+a {
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  white-space: normal !important;
+}
+
+/* Card width and layout fixes */
+.card {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row.justify-content-center .col-md-6,
+.row.justify-content-center .col-md-7,
+.row.justify-content-center .col-md-8 {
+  max-width: 500px;
+}
+
+/* Welcome page specific */
+.row.justify-content-center .col-md-8.col-lg-6 {
+  max-width: 600px;
+}

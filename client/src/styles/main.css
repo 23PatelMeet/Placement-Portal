@@ -1,0 +1,73 @@
+/* Custom scrollbar styles */
+.table-responsive::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Keep header fixed while scrolling */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.input-group {
+  position: relative;
+  /*background: #000;*/
+}
+.input {
+  border: solid 1.5px #b7b7b7;
+  border-radius: 10px;
+  background: none;
+  padding: 15px;
+  width: 100%;
+  color: #212121;
+}
+.label {
+  position: absolute;
+  left: 15px;
+  color: #212121;
+  pointer-events: none;
+  transform: translateY(15px);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:focus,
+input:valid {
+  outline: none;
+  border: 1.5px solid #212121;
+}
+.input:focus ~ label,
+input:valid ~ label {
+  transform: translateX(-10%) translateY(-50%) scale(0.9);
+  background: #fff;
+  padding: 0 0.2em;
+  color: #212121;
+}
+.link {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+.link:hover {
+  font-size: large;
+}
+samp {
+  color: #6a6a6a;
+}
+.bar {
+  text-align: center;
+  margin: 0px 25px;
+}

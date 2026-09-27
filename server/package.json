@@ -1,0 +1,38 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "node index.js",
+		"start": "node index.js",
+		"seed": "node seeders/simpleSeeder.js",
+		"seed:complex": "node seeders/newSeeder.js",
+		"seed:old": "node seeders/index.js",
+		"db:setup": "node -e \"require('./utils/dbHelpers').createIndexes()\"",
+		"db:cleanup": "node -e \"require('./utils/dbHelpers').cleanupExpiredData()\"",
+		"db:stats": "node -e \"require('./utils/dbHelpers').getDatabaseStats().then(console.log)\"",
+		"db:validate": "node -e \"require('./utils/dbHelpers').validateDataIntegrity().then(console.log)\""
+	},
+	"keywords": [
+		"placement",
+		"mern",
+		"mongodb",
+		"express",
+		"node"
+	],
+	"author": "",
+	"license": "ISC",
+	"description": "Placement Web Application Backend - MERN Stack",
+	"dependencies": {
+		"bcryptjs": "^3.0.2",
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.2",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.18.0",
+		"multer": "^2.0.2",
+		"nodemailer": "^7.0.9",
+		"socket.io": "^4.8.1"
+	},
+	"type": "commonjs"
+}
